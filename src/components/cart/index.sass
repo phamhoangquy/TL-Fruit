@@ -1,0 +1,84 @@
+section.block_cart
+	padding: 30px 0
+	.cart-aside
+		.card-item
+			border-radius: 10px
+			box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1)
+			margin: 30px 0
+			.card-heading
+				padding: 15px 20px
+				border-bottom: 1px solid #e5e5e5
+				.card-title
+					color: #347227
+					font-size: 18px
+					font-weight: 700
+					text-transform: uppercase
+			.card-body
+				padding: 0 20px
+				ul
+					list-style: none
+					padding: 15px 0
+					border-bottom: 1px solid #e5e5e5
+					li
+						display: flex
+						justify-content: space-between
+				.cart-input
+					padding: 15px 0
+					label
+						padding: 5px 0
+					.form
+						display: flex
+						input
+							padding: 8px
+							width: 60%
+							border-radius: 0
+							border: 1px solid #e5e5e5
+						button
+							padding: 8px
+							width: 40%
+							border: 1px solid #ff8500
+							background-color: #ff8500
+							color: #fff
+							text-transform: uppercase
+							font-weight: 700
+				.cart-note
+					padding-bottom: 30px
+					.text-grey
+						font-size: 15px
+						color: #999999
+						padding: 10px 0
+			.card-footer
+				padding: 15px 20px
+				ul
+					list-style: none
+					li
+						display: flex
+						justify-content: space-between
+	.cart-btn-group
+		display: flex
+		justify-content: center
+		.button-group
+			display: flex
+			@media screen and ( max-width: 576px )
+				display: block
+			a
+				background-color: #ff8500
+				border-radius: 20px
+				height: 40px
+				width: 260px
+				margin: 0 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #fff
+				em
+					padding-left: 5px
+				&:first-child
+					background-color: #ffffff
+					color: #111111
+					box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1)
+					@media screen and ( max-width: 576px )
+						margin-bottom: 10px
+					em
+						padding-right: 5px
+						padding-left: 0

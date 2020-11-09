@@ -1,0 +1,45 @@
+.table-address
+	width: 100%
+	padding: 25px
+	border-radius: 8px
+	box-shadow: 0 0 10px 0 rgba(#000,.2)
+	margin-top: 30px
+	table
+		width: 100%
+		color: #111111
+		td
+			color: #666
+			font-weight: 400
+			&.title
+				font-weight: 800
+				color: $main
+				text-transform: uppercase
+				width: 150px
+			&.td-title
+				width: 150px
+		td
+			color: #111
+			&.td-delete
+				width: 70px
+				text-align: right
+			&.td-edit
+				width: 115px
+				text-align: right
+			.code
+				font-size: 14px
+				em
+					margin-right: 5px
+					font-size: 16px
+				&:hover
+					text-decoration: underline
+			.default
+				color: $lightGreen
+			.edit
+				color: #068fdd
+			.delete
+				color: $red
+
+	.td-edit
+		.edit 
+			em 
+				padding-right: 5px

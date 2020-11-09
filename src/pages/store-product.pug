@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Cửa hàng phân phối'
+	- var bodyClass = 'store-product-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/store-product/index.pug

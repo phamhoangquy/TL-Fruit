@@ -1,0 +1,248 @@
+header
+	.container
+		.header
+			.logo
+				a(href="index.html")
+					img(src="img/header/logo.png" alt="")
+			.header_center
+				.header_login
+					.login
+						a(href="") Đăng nhập
+					ul.language
+						li
+							a VN
+								span.fal.fa-chevron-down
+							ul.Language-hide
+								li
+									a(href="") EN
+				.header_search
+					form(action="")
+						input(type='text' placeholder="Tôi muốn tìm sản phẩm...")
+						button(type="submit")
+							i.fas.fa-search
+				.header_bars
+					span.fal.fa-bars
+			.header_option
+				a(href='').option
+					.img
+						img(src="img/header/menu-1.png" alt="")
+					p Hotline 0901 234 567
+				a(href='').option
+					.img
+						img(src="img/header/menu-2.png" alt="")
+					p Nguồn gốc rõ ràng
+				a(href='').option
+					.img
+						img(src="img/header/menu-3.png" alt="")
+					p Giao hàng tận nơi
+				a(href='').option
+					.img
+						img(src="img/header/menu-4.png" alt="")
+					p 100% Tươi sạch
+				a.option.addtocart
+					.img
+						img(src="img/header/menu-5.png" alt="")
+					p Giỏ hàng
+						span.cart 5
+				.drop-menu
+					.total
+						p Tổng cộng: 0 đ
+					.content
+					.pay
+						a(href="cart.html").btn-pay Tiến hành thanh toán
+							i.fal.fa-arrow-right
+	nav
+		.container
+			ul.menu
+				li.menu-list.active
+					a(href="index.html").menu-list-a Trang chủ
+				li.menu-list
+					a(href="about.html").menu-list-a Giới thiệu
+				li.menu-list
+					a(href="product-overview.html").menu-list-a Sản phẩm
+					ul.mega-menu
+						li
+							.img
+								img(src="img/header/mega-1.png" alt="")
+							a(href="").title_mega Trái cây
+							ul.mega-list
+								li
+									a(href="") Trái cây nhập khẩu
+								li
+									a(href="") Trái cây nhập khẩu
+						li
+							.img
+								img(src="img/header/mega-2.png" alt="")
+							a(href="").title_mega Rau củ quả
+							ul.block_collapse
+								li
+									a(href="").collapse Sản phẩm
+									ul.collapse-inner
+										li
+											a(href="") Rau củ quả hàng ngày
+										li
+											a(href="") Rau củ quả hàng ngày
+								li
+									a.collapse Nội địa
+									ul.collapse-inner
+										li
+											a(href="") Rau củ quả hàng ngày
+						li
+							.img
+								img(src="img/header/mega-3.png" alt="")
+							a(href="").title_mega Nước ép trái cây
+							ul.mega-list
+								li
+									a(href="") Trái cây nhập khẩu
+								li
+									a(href="") Trái cây nhập khẩu
+				li.menu-list
+					a(href="product-promotion.html").menu-list-a Khuyến mãi
+				li.menu-list
+					a(href="support-client.html").menu-list-a Hỗ trợ khách hàng
+				li.menu-list
+					a(href="news-list.html").menu-list-a Tin tức
+					ul.mega-menu
+						li
+							ul.mega-list
+								li
+									a(href="").title_mega Tin tức - Sự kiện
+								li
+									a(href="").title_mega Tin tức khuyến mãi
+				li.menu-list
+					a(href="contact.html").menu-list-a Liên hệ
+				li.menu-list
+					a(href="store-product.html").menu-list-a Cửa hàng
+			.header_option-mobile
+				a(href='').option
+					.img
+						img(src="img/header/menu-1.png" alt="")
+					p Hotline 0901 234 567
+				a(href='').option
+					.img
+						img(src="img/header/menu-2.png" alt="")
+					p Nguồn gốc rõ ràng
+				a(href='').option
+					.img
+						img(src="img/header/menu-3.png" alt="")
+					p Giao hàng tận nơi
+				a(href='').option
+					.img
+						img(src="img/header/menu-4.png" alt="")
+					p 100% Tươi sạch
+				a(href='').option
+					.img
+						img(src="img/header/menu-5.png" alt="")
+					p 100% Tươi sạch
+
+	.menu_mobile
+		em.header_bars.fal.fa-times
+		.container
+			.block_menu
+				ul
+					li
+						a(href="about.html") Trang chủ
+					li
+						a(href="about.html") Giới thiệu
+					li
+						a(href="product-overview.html") Sản phẩm
+						i.fa.fa-chevron-down.menu-dropdown
+						ul.dropdown-inner
+							li.li-dropdown
+								a(href="") Trái cây
+								i.fa.fa-chevron-down.menu-dropdown
+								.dropdown-inner
+									ul.mega_mega-list
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+							li.li-dropdown
+								a(href="") Trái cây
+								i.fa.fa-chevron-down.menu-dropdown
+								.dropdown-inner
+									ul.mega_mega-list
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+							li.li-dropdown
+								a(href="") Trái cây
+								i.fa.fa-chevron-down.menu-dropdown
+								.dropdown-inner
+									ul.mega_mega-list
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+										li.li_mega_mega-list
+											a.collapse Nội địa
+												i.fa.fa-chevron-down
+											ul.collapse-inner
+												li
+													a(href="") Rau củ quả hàng ngày
+							
+					li
+						a(href="product-promotion.html") Khuyến mãi
+					li
+						a(href="news-list.html") Tin tức
+						i.fa.fa-chevron-down.menu-dropdown
+						ul.dropdown-inner.border
+							li.li-dropdown
+								a(href="") Tin tức - Sự kiện
+							li.li-dropdown
+								a(href="") Tin tức khuyến mãi
+					li
+						a(href="support-client.html") Hỗ trợ
+					li
+						a(href="contact.html") Liên hệ
+					li
+						a(href="store-product.html") Giỏ hàng
+							span.cart 5
+				.header_login
+					.login
+						a(href="") Đăng nhập
+					ul.language
+						li
+							a VN
+								span.fal.fa-chevron-down
+							ul.Language-hide
+								li
+									a(href="") EN
+	.overlay

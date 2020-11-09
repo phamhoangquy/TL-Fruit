@@ -1,0 +1,135 @@
+.block_news-list
+	padding: 50px 0 80px 0
+	.big-news
+		.card_img
+			.img
+				max-width: 100%
+				width: 100%
+				max-height: 100%
+				height: 540px
+				@media screen and ( max-width: 576px )
+					width: 100%
+					height: 230px
+				img
+					width: 100%
+					height: 100%
+					border-radius: 10px
+					object-fit: cover
+		.content-news
+			padding: 15px 0
+			.title-news
+				a
+					color: #333333
+					font-size: 24px
+					font-weight: 700
+			.title-zone-news
+				padding-top: 20px
+				p
+					font-size: 1rem
+					color: #333333
+			.date
+				padding-top: 60px
+				@media screen and ( max-width: 576px )
+					padding-top: 5px
+					padding-bottom: 15px
+				time
+					font-size: 14px
+					color: #999999
+	.small-news
+		display: flex
+		padding-bottom: 30px
+		@media screen and ( max-width: 576px )
+			display: block
+		.card_img
+			.img
+				max-width: 100%
+				max-height: 100%
+				height: 162px
+				width: 240px
+				@media screen and ( max-width: 576px )
+					width: 100%
+					height: 230px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+					border-radius: 10px
+		.content-small-news
+			padding: 10px 0 0 10px
+			.title-small
+				a
+					color: #333333
+					font-size: 1rem
+					font-weight: 700
+			.title-zone-small
+				padding-top: 10px
+				p
+					font-size: 14px
+					color: #333333
+			.date
+				padding-top: 20px
+				@media screen and ( max-width: 576px )
+					padding-top: 5px
+				time
+					color: #999999
+					font-size: 14px
+
+	.news_img
+		.img
+			max-width: 100%
+			max-height: 100%
+			width: 100%
+			height: 193px
+			@media screen and ( max-width: 576px )
+				width: 100%
+				height: 230px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 10px
+	.content-fruit
+		padding: 15px 0
+		.title-fruit
+			a
+				font-size: 18px
+				color: #333333
+				font-weight: 700
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 2
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+				height: 50px
+		.date
+			padding-top: 10px
+			time
+				color: #999999
+				font-size: 14px
+	.btn-more
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			color: #ffffff
+			text-transform: uppercase
+			font-size: 1rem
+			text-align: center
+			font-weight: 700
+			background: #ff8500
+			border-radius: 10px
+			margin-top: 35px
+			width: 170px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			em
+				font-size: 1rem
+				color: #ffffff
+				padding-left: 15px
+		&:hover
+			cursor: pointer
+			a
+				background: #347227

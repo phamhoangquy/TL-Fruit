@@ -1,0 +1,75 @@
+section.block_product-list
+	.container
+		.row
+			.col-xl-3.col-md-4.col-sm-12
+				ul.block_list
+					.title
+						h3 Danh sách
+					li
+						a.collapse Trái cây
+							i.fal.fa-angle-down
+						ul.collapse-inner
+							li
+								a(href="").collapse Nhập khẩu
+									i.fal.fa-angle-down
+								ul.collapse-inner
+									-for(i=0;i<=6;i++)
+										li
+											a(href="") Rau củ quả hàng ngày
+									
+							li
+								a(href="").collapse Nội địa
+									i.fal.fa-angle-down
+								ul.collapse-inner
+									li
+										a(href="") Rau củ quả hàng ngày
+					li
+						a.collapse Rau củ quả
+							i.fal.fa-angle-down
+						ul.collapse-inner
+							li
+								a(href="").collapse Nhập khẩu
+									i.fal.fa-angle-down
+								ul.collapse-inner
+									-for(i=0;i<=6;i++)
+										li
+											a(href="") Rau củ quả hàng ngày
+									
+							li
+								a(href="").collapse Nội địa
+									i.fal.fa-angle-down
+								ul.collapse-inner
+									li
+										a(href="") Rau củ quả hàng ngày
+			.col-xl-9.col-md-8
+				.block_name_category
+					.name_category
+						h3 Rau củ quả hàng ngày
+					.sort 
+						p Sắp xếp theo
+						select
+							option Sản phẩm bán chạy
+							option Sản phẩm bán chạy
+				.row
+					-for(i=0;i<=11;i++)
+						.col-xl-3.col-md-6.col-sm-6.col-xs-6
+							.big_product-list
+								a(href="product-detail.html")
+									.card_img
+										.img
+											img(src="./img/s-4/1.png", alt="")
+										.block_sale
+											.gift
+												i.fas.fa-gift
+											.sale 
+												p -15%
+								a(href="").add-to-cart
+									em.material-icons shopping_basket
+									span Thêm giỏ hàng
+								.name_product
+									a(href="product-detail.html") Cam sành loại 1
+								.item-money
+									.price
+										p 20.500đ / kg
+									.discount
+										p 90.000đ

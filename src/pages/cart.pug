@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Giỏ hàng'
+	- var bodyClass = 'cart-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/cart/index.pug

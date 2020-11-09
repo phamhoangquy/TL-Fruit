@@ -1,0 +1,43 @@
+section.block_cart
+	.container
+		.row
+			.col-lg-8
+			.col-lg-4
+				.cart-aside
+					.card-item
+						.card-heading
+							.card-title Thông tin đơn hàng
+						.card-body
+							ul
+								li
+									strong Tạm tính (0 sản phẩm)
+									span 0 ₫
+								li
+									strong Giảm giá
+									span 0 ₫
+						.card-footer
+							ul
+								li
+									strong Tổng cộng:
+									strong.text-main 0 ₫
+					.card-item
+						.card-heading
+							.card-title Mã giảm giá/ quà tặng
+						.card-body
+							.cart-input
+								label Nhập mã giảm giá
+								.form
+									input(type='text' max-length='20' placeholder='')
+									button Áp dụng
+							.cart-note
+								p.text-grey Sau khi áp dụng, Mã giảm giá có thể không dùng được trong vòng 15 phút.
+								p
+									| Trong quá trình thanh toán, sẽ tạm khóa mã giảm giá của quý khách để đảm bảo phiên giao dịch được ổn định. Mã giảm giá sẽ được mở lại ngay khi phiên giao dịch kết thúc
+	.cart-btn-group
+		.button-group
+			a(href='/')
+				em.ri-arrow-left-line
+				span Tiếp tục mua hàng
+			a(href='information-account.html')
+				span Tiến hành thanh toán
+				em.ri-arrow-right-line

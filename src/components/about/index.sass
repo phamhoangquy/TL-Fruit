@@ -1,0 +1,173 @@
+.block_about
+	padding: 50px 0 0 0
+	.row
+		&:nth-child(2n+1)
+			.col-lg-6
+				&:nth-child(1)
+					order: 1
+					@media screen and ( max-width: 576px )
+						order: inherit
+			
+	.big-about
+		.card_img
+			.img
+				width: 100%
+				height: 495px
+				max-width: 100%
+				max-height: 100%
+				img
+					width: 100% 
+					height: 100% 
+					object-fit: contain
+		
+		.fruit-img
+			ul
+				list-style: none
+				padding: 0
+				@media screen and ( max-width: 576px )
+					display: flex
+				li
+					@media screen and ( max-width: 576px )
+						display: flex
+					.img
+						margin-top: 30px
+						img
+							width: auto 
+							height: auto 
+							max-width: 100%
+							max-height: 100%
+							object-fit: contain
+		.content-about
+			padding: 80px 0 0 0
+			@media screen and ( max-width: 576px )
+				padding: 20px
+			p
+				color: #333333
+				font-size: 1rem
+				&:nth-child(1)
+					padding-bottom: 30px
+		.link-website
+			ul
+				list-style: none
+				padding: 0
+				display: flex
+				@media screen and ( max-width: 576px )
+					display: block
+				li
+					padding-right: 5px
+					@media screen and ( max-width: 576px )
+						padding-bottom: 20px
+						padding-left: 20px
+					a
+						color: #a3d618
+						font-size: 1rem
+
+.block_about-2
+	background-image: url('../img/about/bg-about.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 135px 0 135px 0
+	.about-2
+		background: rgba(#ffffff,.8)
+		padding: 60px 30px
+		p
+			color: #333333
+			font-size: 1rem
+
+
+.block_about-3
+	padding: 70px 0 80px 0
+	.about-logo
+		.img
+			max-width: 100%
+			max-height: 100%
+			width: 100%
+			height: 525px
+			@media screen and ( max-width: 576px )
+				height: auto
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	.about-3
+		padding: 60px 0
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 0 0 
+		ul
+			display: flex
+			list-style: none
+			padding: 0
+			li
+				padding-right: 20px
+				.icon-about
+					img
+						width: 80px
+						height: 80px
+						object-fit: cover
+				.text-about
+					padding-top: 20px
+	
+	.about-fruit-3
+		padding: 60px 0 0 0
+		.bg-about-3
+			background: #a3d618
+			padding: 35px
+			@media screen and ( max-width: 1350px )
+				z-index: 1
+			@media screen and ( max-width: 1024.98px )
+				z-index: 1
+			@media screen and ( max-width: 576px )
+				position: relative
+				z-index: 1
+			&:nth-child(2)
+				background: #ff8500
+				.background
+					.img 
+						top: 110px
+						@media screen and ( max-width: 576px )
+							top: -30px
+							img
+								height: 285px
+								opacity: .5
+				.content-about-3
+					padding: 60px 215px 60px 35px
+					@media screen and ( max-width: 1024.98px )
+						padding: 60px 100px 60px 35px
+					@media screen and ( max-width: 576px )
+						padding: 20px
+					p
+						&:nth-child(2)
+							padding-top: 20px
+
+			.background
+				position: relative
+				.img 
+					position: absolute
+					top: -20px
+					right: -20px
+					pointer-events: none
+					@media screen and ( max-width: 1350px )
+						z-index: -1
+						top: -10px
+					@media screen and ( max-width: 1024.98px )
+						z-index: -1
+						top: -10px
+						img
+							height: 285px
+					@media screen and ( max-width: 576px )
+						z-index: -1
+						top: -10px
+						img
+							height: 285px
+							opacity: .5
+			.content-about-3
+				padding: 60px 150px 60px 35px
+				border: 1px solid #ffffff
+				@media screen and ( max-width: 1024.98px )
+					padding: 60px 100px 60px 35px
+				@media screen and ( max-width: 576px )
+					padding: 20px
+				p
+					color: #ffffff
+

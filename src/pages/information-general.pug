@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thông tin chung'
+	- var bodyClass = 'information-general-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/information/information-general/index.pug

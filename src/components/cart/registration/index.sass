@@ -1,0 +1,131 @@
+.registration
+	background: #f8f8f8
+	.form-wrapper
+		margin: 0 auto
+		padding: 15px
+		border-radius: 8px
+		max-width: 540px
+		background: #ffffff
+		box-shadow:  0 0 10px 0 rgba(0, 0, 0, .2)
+		@media(min-width: 576px)
+			padding: 30px
+		@media(min-width: 1024px)
+			padding: 50px 30px
+			padding-top: 40px
+		.main-title 
+			border-bottom: 1px solid #e0e0e0
+			padding-bottom: 10px
+			h2
+				font-size: 28px
+				text-align: center
+				cursor: pointer
+		.wrap-form
+			margin-top: 15px
+			.title-account
+				padding-bottom: 20px
+				padding-left: 5px
+				h3
+					font-size: 14px
+					color: #333333
+					font-weight: 300
+					text-transform: uppercase
+			.form-group
+				display: flex
+				flex-direction: column
+				margin: 0
+				margin-bottom: 15px
+				&.form-accept
+					margin-bottom: 20px
+				&.form-submit
+					margin-bottom: 0
+					position: relative
+				&.form-passwork
+					display: flex
+					justify-content: center
+					align-items: center
+					input[type="submit"]
+						width: 50%
+						height: 45px
+						background: #ff8500
+						color: #ffffff
+						border: 1px solid #ff8500
+						display: flex
+						justify-content: center
+						align-items: center
+						text-align: center
+						font-size: 16px
+						margin-top: 15px
+						font-weight: 400
+						transition: .2s ease-in-out all
+				label
+					font-size: 15px
+					font-weight: 300
+					// margin: 20px 0	
+					color: #111111
+					display: block
+					span
+						padding-left: 10px
+						color: #333333
+				input[type=text],input[type=password]
+					width: 100%
+					height: 40px
+					padding: 5px 0
+					height: 40px
+					background: #ffffff
+					border-top: none
+					border-right: none
+					border-left: none
+					border-bottom: 1px solid #e1e1e1
+					// border-radius: 8px
+					outline: none
+					// caret-color: $main
+					&::placeholder 
+						font-size: 14px
+						font-weight: 400
+						color: #999999
+						// font-style: italic
+					&:focus
+						box-shadow: none
+				.checked
+					display: inline-flex
+					align-items: center
+					input 
+						margin-right: 5px
+					label
+						font-size: 14px
+						margin: 0
+						font-weight: 400
+				.forgot-pass
+					color: #00addf
+					font-size: 14px
+					&:hover
+						text-decoration: underline
+				.btn-creat-acc,.btn-2
+					width: 100%
+					height: 45px
+					background: #ffffff
+					border-radius: 50px
+					color: #ff8500
+					border: 1px solid #ff8500
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
+					font-size: 16px
+					font-weight: 400
+					transition: .2s ease-in-out all
+					em
+						margin-left: 15px
+						font-size: 24px
+					&:hover 
+						background: #ffffff
+						// color: $main
+				.btn-2
+					background: #d30e15
+					margin-top: 20px
+					border: 1px solid #d30e15
+					&:hover
+						color: #d30e15
+				.form-submit-fb
+					.submit-fb
+					ease-in-out all

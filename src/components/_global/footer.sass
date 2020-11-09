@@ -1,0 +1,198 @@
+footer
+	background-image: url('../img/bg-footer.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	margin-left: auto
+	.social-network-share
+		display: flex
+		.icon
+			display: flex
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-right: 5px
+				padding: 10px
+				&:first-child
+					background: #3b5998
+				&:nth-child(2)
+					background: red
+					border-radius: 5px
+				em
+					font-size: 11px
+					height: 11px
+					line-height: 11px
+					color: #ffffff
+					&::before
+						height: 11px
+						line-height: 11px
+	.bottom-wrapper-news-detail
+		padding-top: 20px
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		p 
+			color: #ffffff
+			font-size: 12px
+			font-weight: 600
+			padding-right: 20px
+	.footer-bottom
+		background: #ffffff
+		border-top: 1px solid #e0e0e0
+		.col-lg-2
+			border-left: 1px solid #e0e0e0
+			&:nth-child(1)
+				border-left: none
+		.icon-footer-bottom
+			padding: 30px 0 30px 0
+			.icon-footer
+				display: flex
+				justify-content: center
+				align-items: center
+				.img
+					img
+						height: 40px
+						object-fit: scale-down
+			.title-footer
+				padding-top: 20px
+				h4
+					font-size: 14px
+					color: #333333
+					text-align: center
+					text-transform: uppercase
+			.text-footer
+				padding-top: 10px
+				p
+					color: #999999
+					font-size: 12px
+					text-align: center
+	
+	.footer-block
+		position: relative
+		.subsrcibe
+			cursor: pointer
+			.subscribefrm
+				height: 50px
+				border: 1px solid #e0e0e0
+				position: relative
+				background: #ffffff
+				border-radius: 10px
+				input
+					border: none
+					border-radius: 10px
+					height: 100%
+					padding: 0 50px 0 20px
+					width: 100%
+					&:focus
+						outline: none
+					&::placeholder
+						width: 100%
+						font-size: 12px
+						font-weight: 300
+						font-style: italic
+				em
+					background: none
+					border: none
+					outline: none
+					position: absolute
+					top: 1px
+					right: 2px
+					border-radius: 10px
+					width: 45px
+					height: 45px
+					display: flex 
+					justify-content: center
+					align-items: center
+					background: #e5232a
+					color: #ffffff
+
+		.footer-card
+			padding-top: 40px
+			padding-bottom: 40px
+			&.pr-40
+				padding-right: 39px
+			.card__title
+				padding-bottom: 15px
+				h4
+					font-size: 18px
+					color: #2e7804
+					text-transform: uppercase
+			.card__body
+				ul
+					padding: 0
+					list-style: none
+					li
+						display: flex
+						align-items: flex-start
+						span
+							i
+								font-size: 14px
+								color: #777777
+								padding-right: 5px
+								
+						p
+							font-size: 12px
+							color: #666666
+							text-align: left
+							padding-left: 10px
+							padding-bottom: 10px
+						strong
+							font-size: 14px
+							p
+								font-size: 14px
+								font-weight: 300
+								color: #777777
+						a
+							font-size: 12px
+							color: #666666
+							padding-bottom: 10px
+						// &:first-child
+						// 	p
+						// 		margin-bottom: 25px
+						// 	@media screen and ( max-width:  576px)
+						// 		p 
+						// 			margin-bottom: 0
+
+			@media screen and ( max-width:  1199px)
+				padding-left: 15px
+			@media screen and ( max-width:  575px)
+				padding: 15px
+	.footer-copyright
+		background: #2e7804
+		padding: 24px 0
+		.policy-link
+			ul
+				text-align: center
+				list-style: none
+				padding-left: 0
+				margin-left: -10px
+				display: flex
+				align-items: center
+				justify-content: center
+				li
+					align-items: center
+					margin-left: 10px
+					padding-left: 10px
+					position: relative
+					+ li
+						&:before
+							position: absolute
+							content: '|'
+							left: -5px
+							top: 50%
+							color: #ffffff
+							transform: translateY(-50%)
+							@media screen and ( max-width: 1024.98px)
+								display: none
+							@media screen and ( max-width: 576px)
+								display: none
+					a
+						font-size: 12px
+						color: #ffffff
+
+	.copyright
+		text-align: center
+		font-size: 12px
+		color: #ffffff
+		line-height: 18px

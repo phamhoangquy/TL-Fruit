@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thông tin thành viên'
+	- var bodyClass = 'information-member-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/information/information-member/index.pug

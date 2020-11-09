@@ -1,0 +1,64 @@
+.table-history
+	border: 1px solid #e1e1e1
+	border-radius: 8px
+	box-shadow: 0 0 10px 0 rgba(#000,.1)
+	margin-top: 25px
+	table
+		width: 100%
+		thead
+			tr
+				th
+					background: #eeeeee
+					padding: 15px 20px
+					font-size: 18px
+					font-weight: 700
+		tbody
+			tr
+				td
+					padding: 15px 20px
+					font-weight: 500
+					font-size: 16px
+					color: #111111
+					.code
+						color: #2c98df
+						&:hover
+							text-decoration: underline
+					.new
+						color: $lightGreen
+					.cancel
+						color: $red
+					.name
+						font-size: 16px
+						color: #111111
+						transition: .2s ease-in-out all
+						&:hover 
+							color: $main
+				&:nth-child(even)
+					td
+						background: #fafafa
+	@media (max-width: 767px)
+		table
+			thead
+				display: none
+			tbody
+				tr
+					display: flex
+					flex-wrap: wrap
+					margin: 5px
+					border: 1px solid $main
+					td
+						flex: 0 0 100%
+						max-width: 100%
+						width: 100%
+						display: flex
+						align-items: center
+						justify-content: space-between
+						&::before
+							content: attr(data-label)
+							font-weight: 700
+	.main-pagination
+		.pagination
+			justify-content: flex-end
+			li 
+				&:last-child
+					margin-right: 0

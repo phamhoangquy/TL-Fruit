@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Lịch sử mua hàng'
+	- var bodyClass = 'information-history-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/information/information-history/index.pug
