@@ -1,0 +1,191 @@
+section.block_information-line
+	.container
+		.row
+			.col-12.col-md-8.col-lg-8
+				.bg-border
+					.text-info-line 
+						h2 Thông tin đơn hàng
+					.wrap-form
+						.row
+							.form-group.col-12
+								label(for="") Họ tên
+									small *
+								input.form-control(type='text', placeholder="Họ và tên")
+							.form-group.col-12
+								label(for="") Điện thoại
+									small *
+								input.form-control(type='text',placeholder="Địa chỉ")
+							.form-group.col-12
+								label(for="") Email
+									small *
+								input.form-control(type='text',placeholder="Email")
+							.form-group.col-12
+								label(for="") Tỉnh/Thành phố
+									small *
+								select.form-control
+									option(value="") Chọn Tỉnh/Thành phố
+									option(value="") TP.HCM
+									option(value="") Hà Nội
+									option(value="") Quận 1
+									option(value="") Quận 2
+									option(value="") Quận 3
+									option(value="") Quận 4
+									option(value="") Quận 5
+									option(value="") Quận 6
+									option(value="") Quận 7
+									option(value="") Quận 8
+									option(value="") Quận 9
+									option(value="") Quận 10
+									option(value="") Quận 11
+									option(value="") Quận 12
+							.form-group.col-12
+								label(for="") Quận/Huyện
+									small *
+								select.form-control 
+									option(value="") Chọn Quận/Huyện
+							.form-group.col-12
+								label(for="") Địa chỉ giao hàng
+									small *
+								input.form-control(type='text',placeholder="Số nhà tên đường")
+							.form-group.col-12
+								label(for="") Ghi chú
+									small *
+								.textarea
+									textarea#inpputTextArea.form-control(rows='3',placeholder="")
+									.note-text Vui lòng ghi rõ thông tin nếu bạn là người nước ngoài
+							.add-new-address
+								p Bạn muốn giao hàng đến địa chỉ khác?
+								a(href="") Thêm địa chỉ giao hàng
+
+				.form-transport 
+					.text-info-line 
+						h2 PHƯƠNG THỨC VẬN CHUYỂN
+					.transport-radio
+						ul
+							li
+								label
+									input(type="radio" id="1" name="fruit" value="fruit")
+								.content-transport
+									.text Giao hàng nhanh
+
+							li
+								label
+									input(type="radio" id="2" name="fruit" value="fruit")
+								.content-transport
+									.text Giao hàng nhan Giao hàng tiêu chuẩn test
+
+				.form-payment
+					.text-info-line 
+						h2 PHƯƠNG THỨC THANH TOÁN
+					.payment-radio
+						ul
+							li
+								label
+									input(type="radio" id="1" name="fruit" value="fruit")
+								.content-payment
+									.img
+										img(src="./img/product/4.png", alt="")
+									.text Thanh toán tiền mặt khi nhận hàng ( COD)
+							li
+								lable
+									input(type="radio" id="2" name="fruit" value="fruit")
+								.content-payment
+									.img
+										img(src="./img/product/5.png", alt="")
+									.text
+										strong Chuyển khoản
+										table
+											tbody
+												tr
+													td Chủ tài khoản :
+													|
+													td
+														strong CÔNG TY CPTM XUẤT NHẬT KHẨU TRÁI CÂY TẤN LỘC Việt Nam
+													|
+												tr
+													td Tài khoản ngân hàng :
+													|
+													td
+														strong 119002666231
+													|
+												tr
+													td Ngân hàng Vietinbank -
+													|
+													td
+														strong CN Nam Thăng Long
+							li
+								label
+									input(type="radio" id="1" name="fruit" value="fruit")
+								.content-payment
+									.img
+										img(src="./img/product/5.png", alt="")
+									.text Thanh toán bằng thẻ thanh toán quốc tế
+							li
+								label
+									input(type="radio" id="1" name="fruit" value="fruit")
+								.content-payment
+									.img
+										img(src="./img/product/6.png", alt="")
+									.text Thanh toán VNPAY
+
+				.form-invoice
+					.text-info-line
+						label
+							input(type="radio" id="1" name="fruit" value="fruit")
+							.title
+								h2 XUÁT HÓA ĐƠN ĐỎ
+					.wrap-form
+						.row
+							.form-group.col-12
+								label(for="") Họ tên
+									small *
+								input.form-control(type='text', placeholder="Họ và tên")
+							.form-group.col-12
+								label(for="") Điện thoại
+									small *
+								input.form-control(type='text',placeholder="Địa chỉ")
+							.form-group.col-12
+								label(for="") Email
+									small *
+								input.form-control(type='text',placeholder="Email")
+			.col-12.col-md-4.col-lg-4
+				.bg-right
+					.text-info-line 
+						h3 Thông tin đơn hàng
+					.cart-summary-item
+						a(href="").product-link
+							.img
+								img(src="./img/product/7.png", alt="")
+							.caption Sữa bầu Morinaga vị trà xanh dạng gói
+						.product-price
+							.price 269.000 ₫
+							.ammount  x 1
+							.total-price
+								strong 269.000 ₫
+					.cart-summary-price
+						ul
+							li.justify-between
+								
+								strong Tạm tính (1 sản phẩm)
+								span 269.000 ₫
+							li.justify-between
+								
+								strong Giảm giá
+								span 0 ₫
+							li.justify-between
+								
+								strong Phí vận chuyển
+								span 0 ₫
+						hr
+						.cart-summary-total-price
+							strong Tổng cộng :
+							strong.text-main 269.000 ₫
+
+	.cart-btn-group
+		.button-group
+			a(href='/')
+				em.ri-arrow-left-line
+				span Tiếp tục mua hàng
+			a(href='information-account.html')
+				span Tiến hành thanh toán
+				em.ri-arrow-right-line

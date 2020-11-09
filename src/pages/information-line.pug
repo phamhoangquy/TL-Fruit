@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thông tin đơn hàng'
+	- var bodyClass = 'information-line-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/cart/information-line/index.pug
