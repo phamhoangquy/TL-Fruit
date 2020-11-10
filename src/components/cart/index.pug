@@ -2,6 +2,35 @@ section.block_cart
 	.container
 		.row
 			.col-lg-8
+				.cart-inner
+					.card-heading
+						.card-title Giỏ hàng của bạn (1 sản phẩm)
+					.card-body
+						.cart-product-list
+							.cart-product-list-heading Chọn tất cả (1 sản phẩm)
+							.cart-product-list-body
+								.cart-product-item
+									.cart-product-item-img
+										a(href='')
+											img(src="./img/s-3/1.png", alt="")
+									.cart-product-item-content
+										.cart-product-item-content-left
+											.cart-product-item-content-top
+												.cart-product-item-detail
+													a.cart-product-item-name(href='') Chuối vàng
+													.cart-product-item-price
+														p 445.000 ₫
+														del 890.000 ₫
+														span.discount - 50%
+													.item-quantity
+														.input-group
+															.input-group-btn
+																.qty-minus.btn-number
+																	em.ri-subtract-line
+															input.product-details-quantity.form-control.input-number(type='text', value='1')
+															.input-group-btn
+																.qty-plus.btn-number
+																	em.ri-add-line
 			.col-lg-4
 				.cart-aside
 					.card-item

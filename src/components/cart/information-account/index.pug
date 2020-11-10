@@ -4,14 +4,13 @@ section.the-pizza-dangky.main-section
 			h2.main-title THÔNG TIN TÀI KHOẢN
 			form(action="")
 				.form-radio
-					.tab-panels-login
-						ul.tab-navigation-login
-							li.active
-								input(type="radio" href="javascript:void(0)" data-type='login-tab-1' id="1" name="fruit" value="fruit")
-								label(for='') Đặt hàng không cần đăng ký
-							li
-								input(type="radio" href="javascript:void(0)" data-type='login-tab-2' id="2" name="fruit" value="fruit")
-								label(for='') Tôi đã có tài khoản
+					ul
+						li.active
+							input(type="radio" id="1" name="fruit" value="fruit")
+							label(for='') Đặt hàng không cần đăng ký
+						li
+							input(type="radio" id="2" name="fruit" value="fruit")
+							label(for='') Tôi đã có tài khoản
 				.tab-wrapper-login
 					.tab-item-login.active#login-tab-1
 						.wrap-form
@@ -31,8 +30,9 @@ section.the-pizza-dangky.main-section
 										a(href="forgot-pass.html") Quên mật khẩu ?
 									li
 										a(href="registration.html") Đăng ký
-							.form-group.form-submit
-								button(type="submit").btn-creat-acc Tiếp tục
+							.form-group.form-submit-next
+								a(href="information-line.html").submit-next
+									span Tiếp tục
 							.form-group.form-submit-fb
 								a(href="").submit-fb
 									em.ri-facebook-fill

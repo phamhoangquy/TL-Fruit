@@ -1,5 +1,79 @@
 section.block_cart
 	padding: 30px 0
+	.cart-inner
+		border-radius: 10px
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1)
+		margin: 30px 0
+		.card-heading
+			padding: 15px 20px
+			border-bottom: 1px solid #e5e5e5
+			.card-title
+				color: #347227
+				font-size: 18px
+				font-weight: 700
+				text-transform: uppercase
+		.card-body
+			padding: 20px
+			.cart-product-list
+				.cart-product-list-heading
+					border-radius: 5px
+					background: #f3f3f3
+					padding: 10px 20px
+					font-weight: 700
+					text-transform: uppercase
+				.cart-product-list-body
+					.cart-product-item
+						display: flex
+						justify-content: center
+						align-items: center
+						.cart-product-item-img
+							width: 120px
+							height: 120px
+							img
+								width: 100%
+								object-fit: contain
+						.cart-product-item-content
+							padding: 10px
+							width: 100%
+							.cart-product-item-detail
+								display: flex
+								@media screen and ( max-width: 576px )
+									display: block
+								.cart-product-item-name
+									width: 50%
+									color: #111111
+								.cart-product-item-price
+									margin-right: 15px
+									p
+										font-weight: 700
+										color: #000
+										text-align: right
+									del
+										font-size: 14px
+										color: #999999
+									.discount
+										padding-left: 10px
+										color: #e5232a
+							.item-quantity
+								.input-group
+									display: flex
+									background: #f3f3f3
+									height: 40px
+									.input-group-btn
+										display: flex
+										justify-content: center
+										align-items: center
+										font-weight: 700
+										color: #001111
+										padding: 5px
+									input
+										width: 120px
+										height: 40px
+										background: #f3f3f3
+										border: none
+										text-align: center
+										font-weight: 700
+										color: #001111
 	.cart-aside
 		.card-item
 			border-radius: 10px
