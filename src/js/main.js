@@ -68,6 +68,15 @@ $('.addtocart').click(function() {
     $('.drop-menu').toggleClass("show");
 });
 
+window.onload = function() {
+    $(".mask, .modal-ads").addClass('active');
+};
+$('.mask, .close').click(function() {
+    $(this).toggleClass("click");
+    $('.mask').toggleClass("active");
+    $('.modal-ads').toggleClass("active");
+});
+
 // Toggle
 function toggleSupportClient() {
     var coll = document.getElementsByClassName("togglesupport");
