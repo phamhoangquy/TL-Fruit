@@ -10,6 +10,7 @@ $(document).ready(function() {
     productPromotionDetail();
     quantityNumber();
     showBackToTop();
+    checkBrowser();
 });
 
 $('.collapse').click(function(e) {
@@ -63,7 +64,7 @@ $('.overlay').click(function() {
     $('.overlay').toggleClass("show");
 });
 
-$('.addtocart').click(function() {
+$('.addtocart, .add-to-cart').click(function() {
     $(this).toggleClass("click");
     $('.drop-menu').toggleClass("show");
 });
@@ -498,5 +499,16 @@ function checkIE() {
         $('body').addClass('is-browser-IE')
     } else {
         $('body').removeClass('is-browser-IE')
+    }
+}
+
+function checkBrowser() {
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    // console.log(isIE)
+    if (isIE == true) {
+        // console.log(1)
+        alert("Website hiển thị tốt nhất trên các phiên bản trình duyệt Chorme và FireFox!")
+    } else {
+        // console.log(0)
     }
 }
