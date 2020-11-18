@@ -3,6 +3,8 @@
 	@media screen and ( max-width: 576px )
 		padding: 30px 0
 	.block_list
+		position: sticky
+		top: 10px
 		border-radius: 8px
 		overflow: hidden
 		box-shadow: 0px 0px 8px #e4e4e4
@@ -25,62 +27,53 @@
 				@media screen and ( max-width: 576px )
 					font-size: 18px
 		li
-			.collapse
-				width: 100%
+			list-style: none
+			.product-list
+				display: flex
+				justify-content: space-between
+				align-items: center
 				height: 50px
 				padding: 0 20px
-				display: flex
-				color: #333333
-				font-size: 16px
-				font-family: "Montserrat-Bold"
-				transition: background .3s ease
-				cursor: pointer
-				align-items: center
-				justify-content: space-between
-				@media screen and ( max-width: 576px )
-					font-size: 14px
-					height: 40px
-				&:hover
-					color: #347227
+				transition: all 0.3s ease
+				a
+					color: #333333
+					font-size: 16px
+					font-family: "Montserrat-Bold"
 				i
-					position: relative
-					color: #414042
 					transition: all 0.3s ease
 					font-size: 22px
-				@media screen and ( max-width: 1024px )
-					padding: 0 10px
-			.collapse.click
-				color: #fff
-				background-color: #ff8500
-				i
-					color: #fff
-					transform: rotate(180deg)
-			.collapse-inner
+					color: #414042
+				&.click
+					background-color: #ff8500
+					a
+						color: #fff
+					i
+						color: #fff
+						transform: rotate(180deg)
+			.product-list_inner
 				overflow: hidden
 				display: none
 				li
-					.collapse
-						color: #8e969c
-						font-family: "Montserrat-Regular"
+					.product-list
 						padding: 0 25px
-						i
+						height: 40px
+						a
 							color: #8e969c
-						@media screen and ( max-width: 1024px )
-							padding: 0 15px
-					.collapse.click
-						color: #347227
-						background-color: unset
-						i
-							color: #347227
-							transform: rotate(180deg)
-					.collapse-inner
+							font-family: "Montserrat-Regular"
+						&.click
+							background-color: unset
+							a
+								color: #347227
+							i
+								color: #347227
+					.product-list_inner
 						li
 							position: relative
-							padding: 8px 35px
+							padding: 5px 35px
 							&:before
 								content: ""
 								position: absolute
-								top: 45%
+								top: 46%
 								left: 25px
 								width: 4px
 								height: 4px

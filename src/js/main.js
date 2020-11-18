@@ -78,6 +78,21 @@ $('.mask, .close').click(function() {
     $('.modal-ads').toggleClass("active");
 });
 
+$('.product-list').click(function() {
+    $(".product-list").removeClass('click');
+
+    var $this = $(this);
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(250);
+    } else {
+        $this.parent().parent().find('li .product-list_inner').removeClass('show');
+        $this.parent().parent().find('li .product-list_inner').slideUp(250);
+        $this.toggleClass('click');
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(250);
+    }
+});
 // Toggle
 function toggleSupportClient() {
     var coll = document.getElementsByClassName("togglesupport");
