@@ -93,6 +93,7 @@ $('.product-list').click(function() {
         $this.next().slideToggle(250);
     }
 });
+
 // Toggle
 function toggleSupportClient() {
     var coll = document.getElementsByClassName("togglesupport");

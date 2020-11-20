@@ -205,6 +205,7 @@ header
 		border-radius: 50%
 		color: #fff
 		background-color: #ff8201
+	
 
 	nav
 		background-color: #e5232a
@@ -378,6 +379,74 @@ header
 					font-family: "Montserrat-SemiBold"
 					@media screen and ( max-width: 576px )
 						font-size: 6px
+			.addtocart		
+				.cart
+					margin-left: 2px
+					border-radius: 50%
+					background-color: #ff8201
+					padding: 3px 4px
+					color: #fff
+					font-size: 7px
+			.drop-menu
+				position: absolute
+				z-index: 100
+				top: 100px
+				right: 0
+				border: 1px solid #e5e5e5
+				border-bottom: 4px solid #a3d618
+				padding: 30px
+				padding-top: 15px
+				background: #fff
+				opacity: 0
+				visibility: hidden
+				.total
+					padding-bottom: 10px
+					border-bottom: 2px solid #e5e5e5
+					p
+						text-align: right
+						@media screen and ( max-width: 576px )
+							font-size: 14px
+				.body
+					padding: 15px 0
+					.product
+						display: flex
+						align-items: center
+						border-bottom: 1px solid #e5e5e5
+						.img
+							width: 60px
+							height: 60px
+							img
+								width: 100%
+								object-fit: contain
+						.content
+							padding-left: 20px
+							width: 100%
+							.name
+								font-size: 14px
+							.box_price
+								display: flex
+								justify-content: space-between
+								align-items: flex-end
+								.number
+									font-size: 14px
+									color: #999
+								.price
+									font-weight: 700
+				.pay
+					padding-top: 10px
+					.btn-pay
+						background-color: #ff8500
+						color: #fff
+						padding: 10px 50px
+						border-radius: 20px
+						font-size: 14px
+						i
+							padding-left: 10px
+				&.show
+					top: 107px
+					opacity: 1
+					visibility: visible
+					transition: 0.3s linear
 	::-webkit-scrollbar
 		width: 2px
 	::-webkit-scrollbar-thumb
