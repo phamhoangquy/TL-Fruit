@@ -30,20 +30,21 @@
 		background: #ffffff
 		@media screen and ( max-width: 576px )
 			margin-top: 10px
-		&:hover
-			border: 1px solid #ff8500
-			.add-to-cart
-				top: 190px
-				opacity: 1
-				visibility: visible
-				transition: 0.2s all
-				display: flex
-				justify-content: center
-				align-items: center
-			.card_img
-				.img
-					img
-						transform: scale(0.8)
+		@media screen and ( min-width: 576px)
+			&:hover
+				border: 1px solid #ff8500
+				.add-to-cart
+					top: 190px
+					opacity: 1
+					visibility: visible
+					transition: 0.2s all
+					display: flex
+					justify-content: center
+					align-items: center
+				.card_img
+					.img
+						img
+							transform: scale(0.8)
 		.card_img
 			@media screen and ( max-width: 576px )
 				margin-top: 10px

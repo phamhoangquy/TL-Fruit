@@ -142,17 +142,21 @@
 		position: relative
 		@media screen and ( max-width: 576px )
 			margin-top: 10px
-		&:hover
-			border: 1px solid #ff8500
-			.add-to-cart
-				top: 190px
-				opacity: 1
-				visibility: visible
-				transition: 0.2s all
-			.card_img
-				.img
-					img
-						transform: scale(0.8)
+		@media screen and ( min-width: 576px)
+			&:hover
+				border: 1px solid #ff8500
+				.add-to-cart
+					top: 190px
+					opacity: 1
+					visibility: visible
+					transition: 0.2s all
+					display: flex
+					justify-content: center
+					align-items: center
+				.card_img
+					.img
+						img
+							transform: scale(0.8)
 		.card_img
 			.img
 				width: 100%
@@ -221,6 +225,20 @@
 				background-color: #ff8500
 			@media screen and ( max-width: 576px )
 				font-size: 12px
+			@media screen and ( max-width: 576px )
+				font-size: 12px
+				left: 10%
+				padding: 10px 0
+				width: 80%
+				position: relative
+				left: auto
+				opacity: 1
+				visibility: visible
+				width: 100%
+				top: auto 
+				z-index: 0
+				margin-top: 0
+				justify-content: center
 		.name_product
 			a
 				font-size: 14px
